@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cathy Federiso | Professional Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f7f3ee;color:#333;line-height:1.8}
+header{position:sticky;top:0;background:#fff;padding:18px 40px;display:flex;justify-content:space-between;box-shadow:0 2px 12px rgba(0,0,0,.08);z-index:999}
+nav a{text-decoration:none;color:#555;margin-left:20px;font-weight:600}
+.hero{min-height:90vh;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;padding:70px}
+.hero h1{font-size:80px;color:#9d7b4f}
+.hero img{width:100%;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,.15)}
+.badge{color:#9d7b4f;letter-spacing:3px;font-weight:bold}
+.btn{display:inline-block;background:#9d7b4f;color:#fff;padding:14px 24px;border-radius:10px;text-decoration:none;margin-top:20px}
+section{max-width:1200px;margin:auto;padding:80px 20px}
+h2{font-size:48px;color:#9d7b4f;margin-bottom:15px}
+.case{background:#fff;padding:35px;border-radius:20px;margin-bottom:40px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px;margin-top:20px}
+.gallery img{width:100%;border-radius:12px;cursor:pointer;transition:.3s}
+.gallery img:hover{transform:scale(1.03)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}
+.tags span{background:#f3ede3;padding:8px 14px;border-radius:999px}
+footer{background:#efe7da;text-align:center;padding:60px;margin-top:50px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);justify-content:center;align-items:center;z-index:9999}
+.modal img{max-width:90%;max-height:90%}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+
+<header>
+<div><strong>Cathy Federiso</strong></div>
+<nav>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<div>
+<p class="badge">ADMINISTRATIVE OPERATIONS ASSISTANT</p>
+<h1>Cathy Federiso</h1>
+<p>I help businesses stay organized through supplier sourcing, procurement support, lead generation, administrative operations, documentation management, and e-commerce support.</p>
+<a class="btn" href="#portfolio">View Portfolio</a>
+</div>
+<div>
+<img src="01.jpg" alt="Profile">
+</div>
+</div>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am an Administrative Operations Assistant with experience supporting government operations, international supplier sourcing projects, procurement documentation, lead generation, business research, and e-commerce operations. My role focuses on building organized systems, maintaining accurate records, conducting research, and helping businesses improve efficiency through structured processes and dependable administrative support.</p>
+</section>
+
+<section id="portfolio">
+<h2>Portfolio Case Studies</h2>
+
+<div class="case">
+<h3>International Supplier Sourcing & Vendor Research</h3>
+<p><strong>Client:</strong> Fashion Startup Project</p>
+<p><strong>Project Overview:</strong> Supported supplier sourcing initiatives for premium fashion production by researching manufacturers across multiple countries and evaluating potential production partners.</p>
+<p><strong>My Responsibilities:</strong></p>
+<ul>
+<li>Researched suppliers from Portugal, Turkey, China, Vietnam, and India.</li>
+<li>Verified supplier legitimacy and contact information.</li>
+<li>Compared MOQ requirements and production capabilities.</li>
+<li>Built supplier databases and sourcing reports.</li>
+<li>Organized information for strategic decision-making.</li>
+</ul>
+<div class="tags">
+<span>Supplier Research</span><span>Lead Generation</span><span>Market Research</span><span>Database Management</span>
+</div>
+<div class="gallery">
+<img src="02.png" onclick="openImg(this.src)">
+<img src="03.png" onclick="openImg(this.src)">
+<img src="04.png" onclick="openImg(this.src)">
+<img src="05.png" onclick="openImg(this.src)">
+<img src="06.png" onclick="openImg(this.src)">
+</div>
+</div>
+
+<div class="case">
+<h3>Government Administrative & Procurement Support</h3>
+<p><strong>Project Overview:</strong> Supported administrative and procurement functions through documentation preparation, records management, supplier canvassing, and operational reporting.</p>
+<p><strong>My Responsibilities:</strong></p>
+<ul>
+<li>Prepared procurement and canvass documents.</li>
+<li>Maintained supplier quotations and records.</li>
+<li>Organized administrative reports and documentation.</li>
+<li>Supported compliance and records management.</li>
+</ul>
+<div class="tags">
+<span>Procurement</span><span>Documentation</span><span>Administrative Support</span><span>Reporting</span>
+</div>
+<div class="gallery">
+<img src="07.png" onclick="openImg(this.src)">
+<img src="08.png" onclick="openImg(this.src)">
+<img src="09.png" onclick="openImg(this.src)">
+</div>
+</div>
+
+<div class="case">
+<h3>E-commerce Operations & Klaviyo Support</h3>
+<p><strong>Company:</strong> Teeshoppen</p>
+<p><strong>Project Overview:</strong> Assisted with e-commerce operations, administrative coordination, product monitoring, and email marketing support.</p>
+<p><strong>My Responsibilities:</strong></p>
+<ul>
+<li>Supported operational workflows and product monitoring.</li>
+<li>Assisted with Klaviyo email marketing activities.</li>
+<li>Managed product information and organized data.</li>
+<li>Provided administrative and campaign support.</li>
+</ul>
+<div class="tags">
+<span>Klaviyo</span><span>Shopify</span><span>E-commerce</span><span>Operations</span>
+</div>
+<div class="gallery">
+<img src="10.png" onclick="openImg(this.src)">
+<img src="11.png" onclick="openImg(this.src)">
+<img src="12.png" onclick="openImg(this.src)">
+<img src="13.png" onclick="openImg(this.src)">
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills & Tools</h2>
+<div class="tags">
+<span>Administrative Support</span><span>Lead Generation</span><span>Supplier Sourcing</span>
+<span>Procurement Support</span><span>Documentation</span><span>Research</span>
+<span>Google Workspace</span><span>Excel</span><span>Canva</span>
+<span>Shopify</span><span>Klaviyo</span><span>Meta Business Suite</span>
+</div>
+</section>
+
+<section id="contact">
+<h2>Let's Work Together</h2>
+<p>Email: cathyfederiso08@gmail.com</p>
+<p>Phone: +63 915 243 6568</p>
+<p>Location: Philippines</p>
+</section>
+
+<footer>
+<h3>Cathy Federiso</h3>
+<p>Administrative Operations Assistant | Lead Generation | E-commerce Support</p>
+<p>Organization creates efficiency. Efficiency creates growth.</p>
+</footer>
+
+<div class="modal" id="modal" onclick="this.style.display='none'">
+<img id="modalImg">
+</div>
+
+<script>
+function openImg(src){
+document.getElementById('modal').style.display='flex';
+document.getElementById('modalImg').src=src;
+}
+</script>
+</body>
+</html>
